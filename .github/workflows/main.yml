@@ -12,7 +12,7 @@ jobs:
         with:
           host: 46.175.145.70
           username: o251298
-          key: ${{ secrets.OMG_SECRET }}
+          key: ${{ secrets.PRIVATE_KEY }}
           port: 22
           script: |
             cd deploy
