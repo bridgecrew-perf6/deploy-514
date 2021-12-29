@@ -14,5 +14,5 @@ jobs:
           server: 185.212.128.177
           username: o251298
           password: Zapomni1parol
-          server-dir: /
+          server-dir: /smsbulks.ru/
           port: 21 # todo replace with your web hosts ftps port
