@@ -16,4 +16,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           port: 22 # todo replace with your web hosts ftps port
-          server-dir: /var/www/html/
