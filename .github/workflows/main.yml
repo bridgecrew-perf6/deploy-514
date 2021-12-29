@@ -1,20 +1,18 @@
+on: push
 name: 🚀 Deploy website on push
-on:
-  push:
-    branches: [main]
 jobs:
-  job_one:
-    name: Deploy
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: test ssh connect
-        uses: appleboy/ssh-action@master
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
-          host: 46.175.145.70
-          username: o251298
-          key: ${{ secrets.PRIVATE_KEY }}
-          port: 22
-          script: |
-            cd deploy
-            git pull origin main
-            git status
+          server: 185.212.128.177
+          username: root
+          password: 0F7x0V8j
+          protocol: ftps
+          port: 21 # todo replace with your web hosts ftps port
