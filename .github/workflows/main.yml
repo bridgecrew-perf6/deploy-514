@@ -12,7 +12,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: 185.212.128.177
-          username: root
-          password: 0F7x0V8j
-          protocol: ftps
+          username: o251298
+          password: Zapomni1parol
           port: 21 # todo replace with your web hosts ftps port
